@@ -1,0 +1,31 @@
+.input {
+  width: 631px;
+  height: 52px;
+  background-color: #5a5c66;
+  padding-left: 26px;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: #b2b7bf;
+}
+
+.search {
+  margin-left: 78px;
+  position: relative;
+}
+
+.search::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -10.5px;
+  right: 16px;
+  background: url(../../assets/search.svg) center no-repeat;
+  width: 21px;
+  height: 21px;
+}

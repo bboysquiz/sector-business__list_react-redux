@@ -1,0 +1,160 @@
+.main {
+  width: 1077px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px auto 0 auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.thead {
+  background-color: #474955;
+  height: 54px;
+}
+
+.table-head {
+  position: relative;
+}
+
+.table-head::after {
+  position: absolute;
+  content: '';
+  background-color: #474955;
+  display: block;
+  top: 0;
+  right: -3px;
+  width: 4px;
+  height: 100%;
+}
+
+.table-head__span {
+  position: relative;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #fff;
+}
+
+.table-head__span::after {
+  content: '';
+  display: block;
+  width: 11.66px;
+  height: 5.83px;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  margin-top: -2.91px;
+  background: url(../../assets/arrow.svg) center no-repeat;
+}
+
+.table-id {
+  width: 110px;
+  text-align: center;
+}
+
+.table-title {
+  width: 529px;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.table-body {
+  width: 432px;
+  padding-left: 11px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.table-data {
+  position: relative;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.table-data::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #e3e6ec;
+  top: 0;
+  right: -1px;
+  display: block;
+}
+
+.table-data::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #e3e6ec;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.table-row {
+  position: relative;
+}
+
+.table-row::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e3e6ec;
+  display: block;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 25px 12px 41px;
+}
+
+.pagination__step-button {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 71px;
+  height: 33px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #474955;
+}
+
+.pagination__button {
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  color: #474955;
+}
+.pagination__button[disabled]{
+    color: #7EBC3C;
+}
